@@ -33,10 +33,10 @@ A small Express app that gates a "secret" page behind a simple password check im
 
 ## Files
 - `index.js` – current implementation using `express.urlencoded` and a password-check middleware.
-- `solution.js` – alternate reference implementation using `body-parser` but same overall flow.
 - `public/index.html` – form that posts `password` to `/check`.
 - `public/secret.html` – page shown after successful password validation.
 
 ## Notes
 - Default port is `3000`; change the `port` constant in `index.js` if needed.
 - The example uses an in-memory flag (`userIsAuthorized`); in real apps you would use sessions or tokens instead.
+
